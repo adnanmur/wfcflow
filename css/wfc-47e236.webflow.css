@@ -85,8 +85,8 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 44px;
+  padding-bottom: 44px;
   padding-right: 0;
   display: flex;
 }
@@ -272,6 +272,7 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
+  padding-right: 32px;
   font-family: Figtree, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -391,7 +392,7 @@
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 88px 40px 0;
+  padding: 0 40px;
   text-decoration: none;
   display: flex;
 }
@@ -501,6 +502,7 @@
   grid-row-gap: 40px;
   flex-flow: column;
   width: 540px;
+  padding-right: 24px;
   display: flex;
 }
 
@@ -1804,6 +1806,10 @@
   background-color: #a3730314;
 }
 
+.checkbox-flow._50 {
+  width: 50%;
+}
+
 .heading-left-cont-flow {
   flex-flow: column;
   justify-content: center;
@@ -1901,6 +1907,15 @@
   inset: 0% 5% auto auto;
 }
 
+.checkbox.gift {
+  top: 6px;
+  right: 12px;
+}
+
+.checkbox.gift.w--redirected-checked {
+  background-color: var(--gold);
+}
+
 .body-1 {
   width: 0;
   height: 0;
@@ -1917,6 +1932,11 @@
   align-items: center;
   padding-bottom: 32px;
   display: flex;
+}
+
+.price-check-plans.align-left {
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .form-4 {
@@ -2149,6 +2169,27 @@
   text-decoration: none;
 }
 
+.flow-gif-form {
+  background-color: #f7f5f5;
+  flex-flow: row;
+  padding-left: 5rem;
+  padding-right: 0;
+  display: flex;
+}
+
+.textarea {
+  background-color: #f7f7f7;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  min-height: 333px;
+  padding-top: 12px;
+  font-family: Figtree, sans-serif;
+}
+
+.textarea:hover {
+  background-color: var(--gold-trans);
+}
+
 @media screen and (max-width: 991px) {
   .flow1 {
     flex-flow: column;
@@ -2256,6 +2297,11 @@
 
   .right-container-inner-welcome {
     max-width: none;
+  }
+
+  .flow-gif-form {
+    flex-flow: column;
+    padding-left: 0;
   }
 }
 
@@ -2682,6 +2728,12 @@
 
   .link-block-3 {
     margin-top: 44px;
+  }
+
+  .flow-gif-form {
+    flex-flow: column;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
